@@ -1,4 +1,6 @@
-# default
+# uber
+
+## API
 
 ```json
 {
@@ -378,3 +380,9 @@
   }
 }
 ```
+
+## Sample requests
+
+http://localhost:8000/v1/products?latitude=101&longitude=11
+
+
