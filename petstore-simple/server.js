@@ -18,5 +18,6 @@ app.use(swaggerize({
 }));
 
 server.listen(8000, function () {
-    app.setHost(server.address().address + ':' + server.address().port);
+    app.swagger.api.host = server.address().address + ':' + server.address().port;
+    console.log('Server listening at %s:%d', server.address().address, server.address().port);
 });
