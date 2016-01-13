@@ -1,4 +1,4 @@
-# petstore-simple
+# petstore-simple-express
 
 ```json
 {
