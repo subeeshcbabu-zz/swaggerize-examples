@@ -1,0 +1,37 @@
+{
+    "name" : "echo-restify",
+    "description" : "",
+    "version" : "0.1.0",
+    "author" : "subeesh chothendavida <subeeshcbabu@yahoo.co.in>",
+    "contributors" : [],
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/subeeshcbabu/echo-restify.git"
+    },
+    "bugs" : "http://github.com/subeeshcbabu/echo-restify/issues",
+    "publishConfig" : {
+        "registry" : "https://registry.npmjs.org"
+    },
+    "engines" : {
+        "node" : "~0.10.22"
+    },
+    "dependencies": {
+        "swaggerize-restify": "^2.0.0",
+        "restify": "^3.0.3"
+    },
+    "devDependencies": {
+        "tape": "^3.0.0",
+        "js-yaml": "^3.2.6",
+        "jshint": "^2.4.1",
+        "istanbul": "~0.2.3",
+        "enjoi": "~0.1.16" ,
+        "supertest": "~0.13.0"
+    },
+    "scripts": {
+        "test": "tape tests/*.js",
+        "cover": "istanbul cover tape -- test/*.js",
+        "lint": "jshint -c .jshintrc --exclude ./node_modules .",
+        "regenerate": "yo swaggerize --only=handlers,models,tests --framework restify --apiPath config/echo.yaml"
+    },
+    "main" : "./server"
+}

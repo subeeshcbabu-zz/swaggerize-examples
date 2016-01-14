@@ -7,16 +7,32 @@ These examples are generated using the [Swaggerize generator](https://github.com
 
 ### Express
 
-## Uber
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/uber.yaml
+#### Uber
 
 https://github.com/subii/swaggerize-examples/tree/master/default
 
-## Petstore-simple
+API - https://github.com/subii/swaggerize-examples/blob/master/api/uber.yaml
 
-API - https://github.com/subii/swaggerize-examples/blob/master/api/petstore-simple.yaml
+#### Petstore-simple
+
 
 https://github.com/subii/swaggerize-examples/tree/master/petstore-simple
 
+API - https://github.com/subii/swaggerize-examples/blob/master/api/petstore-simple.yaml
 
+
+### Hapi
+
+#### Minimal
+
+https://github.com/subii/swaggerize-examples/tree/master/minimal-hapi
+
+API - https://github.com/subii/swaggerize-examples/blob/master/api/minimal.yaml
+
+### Restify
+
+#### Echo
+
+https://github.com/subii/swaggerize-examples/tree/master/echo-restify
+
+API - https://github.com/subii/swaggerize-examples/blob/master/api/echo.yaml
