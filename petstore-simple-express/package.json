@@ -1,14 +1,14 @@
 {
-  "name": "default",
+  "name": "petstore-simple-express",
   "description": "",
   "version": "0.1.0",
   "author": "subeesh chothendavida <subeeshcbabu@yahoo.co.in>",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/subeeshcbabu/default.git"
+    "url": "git://github.com/subeeshcbabu/petstore-simple.git"
   },
-  "bugs": "http://github.com/subeeshcbabu/default/issues",
+  "bugs": "http://github.com/subeeshcbabu/petstore-simple/issues",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -32,7 +32,7 @@
     "test": "tape tests/*.js",
     "cover": "istanbul cover tape -- test/*.js",
     "lint": "jshint -c .jshintrc --exclude ./node_modules .",
-    "regenerate": "yo swaggerize --only=handlers,models,tests --framework express --apiPath config/default.yaml"
+    "regenerate": "yo swaggerize --only=handlers,models,tests --framework express --apiPath config/petstore-simple.yaml"
   },
   "main": "./server"
 }
