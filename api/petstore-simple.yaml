@@ -155,4 +155,13 @@ definitions:
         format: int32
       message:
         type: string
+  extendedErrorModel:
+    allOf:
+    - $ref: '#/definitions/errorModel'
+    - type: object
+      required:
+      - rootCause
+      properties:
+        rootCause:
+          type: string
 
