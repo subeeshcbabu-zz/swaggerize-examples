@@ -15,23 +15,22 @@ test('api', function (t) {
     
 
     app.use(swaggerize({
-        api: path.join(__dirname, './../config/petstore-simple.yaml'),
+        api: path.join(__dirname, './../config/security.yaml'),
         handlers: path.join(__dirname, '../handlers')
     }));
 
-
+    
     t.test('test get /pets/{id}', function (t) {
-
+        
         var responseSchema = enjoi({
-            '$ref': "#/definitions/pet"
+            'type': "array", 
+            'items': {"$ref":"#/definitions/Pet"}
         }, {
-            subSchemas: {
-              '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/petstore-simple.yaml')))
-            }
+          '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/security.yaml'))) 
         });
+        
 
-
-        request(app).get('/api/pets/1')
+        request(app).get('/v1/pets/{id}')
         .end(function (err, res) {
             t.ok(!err, 'get /pets/{id} no error.');
             t.strictEqual(res.statusCode, 200, 'get /pets/{id} 200 status.');
@@ -41,17 +40,6 @@ test('api', function (t) {
             t.end();
         });
     });
-
-    t.test('test delete /pets/{id}', function (t) {
-
-
-        request(app).delete('/api/pets/1')
-        .end(function (err, res) {
-            t.ok(!err, 'delete /pets/{id} no error.');
-            t.strictEqual(res.statusCode, 204, 'delete /pets/{id} 204 status.');
-            t.end();
-        });
-    });
-
+    
 
 });

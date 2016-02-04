@@ -16,8 +16,8 @@
     "node": "~0.10.22"
   },
   "dependencies": {
-    "express": "^4.0.0",
     "body-parser": "^1.9.0",
+    "express": "^4.0.0",
     "swaggerize-express": "^4.0.0"
   },
   "devDependencies": {

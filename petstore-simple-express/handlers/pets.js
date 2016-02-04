@@ -9,7 +9,7 @@ module.exports = {
      * produces: application/json, application/xml, text/xml, text/html
      */
     get: function findPets(req, res) {
-        res.sendStatus(501);
+        res.sendStatus(200);
     },
     /**
      * Creates a new pet in the store.  Duplicates are allowed
@@ -17,6 +17,6 @@ module.exports = {
      * produces: application/json
      */
     post: function addPet(req, res) {
-        res.sendStatus(501);
+        res.sendStatus(200);
     }
 };

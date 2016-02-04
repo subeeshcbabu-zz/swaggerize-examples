@@ -9,14 +9,14 @@ module.exports = {
      * produces: application/json, application/xml, text/xml, text/html
      */
     get: function findPetById(req, res) {
-        res.sendStatus(501);
+        res.sendStatus(200);
     },
     /**
      * deletes a single pet based on the ID supplied
      * parameters: id
-     * produces: 
+     * produces:
      */
     delete: function deletePet(req, res) {
-        res.sendStatus(501);
+        res.sendStatus(200);
     }
 };

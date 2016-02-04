@@ -12,7 +12,7 @@ var test = require('tape'),
 test('api', function (t) {
     var app = express();
 
-    
+
     app.use(require('body-parser')());
 
     app.use(swaggerize({
@@ -20,16 +20,18 @@ test('api', function (t) {
         handlers: path.join(__dirname, '../handlers')
     }));
 
-    
+
     t.test('test get /pets', function (t) {
-        
+
         var responseSchema = enjoi({
-            'type': "array", 
+            'type': "array",
             'items': {"$ref":"#/definitions/pet"}
         }, {
-          '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/petstore-simple.yaml'))) 
+            subSchemas: {
+              '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/petstore-simple.yaml')))
+            }
         });
-        
+
 
         request(app).get('/api/pets')
         .end(function (err, res) {
@@ -41,19 +43,21 @@ test('api', function (t) {
             t.end();
         });
     });
-    
+
     t.test('test post /pets', function (t) {
-        
+
         var body = {
             'name': "helloworld"
         };
-        
+
         var responseSchema = enjoi({
             '$ref': "#/definitions/pet"
         }, {
-          '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/petstore-simple.yaml'))) 
+            subSchemas: {
+              '#':  jsYaml.load(fs.readFileSync(path.join(__dirname, './../config/petstore-simple.yaml')))
+            }
         });
-        
+
 
         request(app).post('/api/pets').send(body)
         .end(function (err, res) {
@@ -65,6 +69,6 @@ test('api', function (t) {
             t.end();
         });
     });
-    
+
 
 });
