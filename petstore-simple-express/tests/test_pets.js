@@ -7,7 +7,8 @@ var test = require('tape'),
     fs = require('fs'),
     enjoi = require('enjoi'),
     swaggerize = require('swaggerize-express'),
-    request = require('supertest');
+    request = require('supertest'),
+    util = require('util');
 
 test('api', function (t) {
     var app = express();
@@ -38,7 +39,7 @@ test('api', function (t) {
             t.ok(!err, 'get /pets no error.');
             t.strictEqual(res.statusCode, 200, 'get /pets 200 status.');
             responseSchema.validate(res.body, function (error) {
-                t.ok(!error, 'Response schema valid.');
+                t.ok(!error, 'Response schema valid.' + util.inspect(res.body));
             });
             t.end();
         });

@@ -1,4 +1,5 @@
 'use strict';
+var Pet = require('../models/pet');
 /**
  * Operations on /pets
  */
@@ -9,7 +10,11 @@ module.exports = {
      * produces: application/json, application/xml, text/xml, text/html
      */
     get: function findPets(req, res) {
-        res.sendStatus(200);
+        var model = new Pet({
+            name: 'sweetpet',
+            id: 12345
+        });
+        res.status(200).send(model);
     },
     /**
      * Creates a new pet in the store.  Duplicates are allowed
@@ -17,6 +22,10 @@ module.exports = {
      * produces: application/json
      */
     post: function addPet(req, res) {
-        res.sendStatus(200);
+        var model = new Pet({
+            name: 'sweetpet',
+            id: 12345
+        });
+        res.status(200).send(model);
     }
 };
