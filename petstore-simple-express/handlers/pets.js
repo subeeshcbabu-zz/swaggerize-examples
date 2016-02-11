@@ -10,11 +10,12 @@ module.exports = {
      * produces: application/json, application/xml, text/xml, text/html
      */
     get: function findPets(req, res) {
-        var model = new Pet({
+        var models = [];
+        models.push(new Pet({
             name: 'sweetpet',
             id: 12345
-        });
-        res.status(200).send(model);
+        }));
+        res.status(200).send(models);
     },
     /**
      * Creates a new pet in the store.  Duplicates are allowed

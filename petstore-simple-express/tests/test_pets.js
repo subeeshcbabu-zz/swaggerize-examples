@@ -39,7 +39,7 @@ test('api', function (t) {
             t.ok(!err, 'get /pets no error.');
             t.strictEqual(res.statusCode, 200, 'get /pets 200 status.');
             responseSchema.validate(res.body, function (error) {
-                t.ok(!error, 'Response schema valid.' + util.inspect(res.body));
+                t.ok(!error, 'Response schema valid.');
             });
             t.end();
         });
