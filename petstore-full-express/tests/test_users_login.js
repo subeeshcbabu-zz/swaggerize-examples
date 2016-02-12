@@ -32,6 +32,7 @@ test('api', function (t) {
         request(app).get('/v2/users/login')
         .end(function (err, res) {
             t.ok(!err, 'get /users/login no error.');
+            
             t.strictEqual(res.statusCode, 200, 'get /users/login 200 status.');
             responseSchema.validate(res.body, function (error) {
                 t.ok(!error, 'Response schema valid.');

@@ -30,7 +30,7 @@ test('api', function (t) {
         request(app).post('/v2/users/createWithList').send(body)
         .end(function (err, res) {
             t.ok(!err, 'post /users/createWithList no error.');
-            t.strictEqual(res.statusCode, default, 'post /users/createWithList default status.');
+            t.ok(res.statusCode, 'post /users/createWithList default status.');
             t.end();
         });
     });

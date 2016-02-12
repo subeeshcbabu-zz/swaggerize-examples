@@ -33,6 +33,7 @@ test('api', function (t) {
         request(app).get('/v2/pets/findByStatus')
         .end(function (err, res) {
             t.ok(!err, 'get /pets/findByStatus no error.');
+            
             t.strictEqual(res.statusCode, 200, 'get /pets/findByStatus 200 status.');
             responseSchema.validate(res.body, function (error) {
                 t.ok(!error, 'Response schema valid.');

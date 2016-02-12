@@ -32,6 +32,7 @@ test('api', function (t) {
         request(app).post('/v2/pets').send(body)
         .end(function (err, res) {
             t.ok(!err, 'post /pets no error.');
+            
             t.strictEqual(res.statusCode, 405, 'post /pets 405 status.');
             t.end();
         });
@@ -47,6 +48,7 @@ test('api', function (t) {
         request(app).put('/v2/pets').send(body)
         .end(function (err, res) {
             t.ok(!err, 'put /pets no error.');
+            
             t.strictEqual(res.statusCode, 400, 'put /pets 400 status.');
             t.end();
         });

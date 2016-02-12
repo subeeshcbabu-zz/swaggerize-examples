@@ -30,7 +30,7 @@ test('api', function (t) {
         request(app).post('/v2/users/createWithArray').send(body)
         .end(function (err, res) {
             t.ok(!err, 'post /users/createWithArray no error.');
-            t.strictEqual(res.statusCode, default, 'post /users/createWithArray default status.');
+            t.ok(res.statusCode, 'post /users/createWithArray default status.');
             t.end();
         });
     });

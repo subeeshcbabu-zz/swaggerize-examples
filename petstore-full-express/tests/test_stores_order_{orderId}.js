@@ -32,6 +32,7 @@ test('api', function (t) {
         request(app).get('/v2/stores/order/helloworld')
         .end(function (err, res) {
             t.ok(!err, 'get /stores/order/{orderId} no error.');
+            
             t.strictEqual(res.statusCode, 200, 'get /stores/order/{orderId} 200 status.');
             responseSchema.validate(res.body, function (error) {
                 t.ok(!error, 'Response schema valid.');
@@ -46,6 +47,7 @@ test('api', function (t) {
         request(app).delete('/v2/stores/order/helloworld')
         .end(function (err, res) {
             t.ok(!err, 'delete /stores/order/{orderId} no error.');
+            
             t.strictEqual(res.statusCode, 400, 'delete /stores/order/{orderId} 400 status.');
             t.end();
         });

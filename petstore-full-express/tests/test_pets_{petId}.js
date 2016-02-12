@@ -33,6 +33,7 @@ test('api', function (t) {
         request(app).get('/v2/pets/1')
         .end(function (err, res) {
             t.ok(!err, 'get /pets/{petId} no error.');
+            
             t.strictEqual(res.statusCode, 200, 'get /pets/{petId} 200 status.');
             responseSchema.validate(res.body, function (error) {
                 t.ok(!error, 'Response schema valid.');
@@ -47,6 +48,7 @@ test('api', function (t) {
         request(app).post('/v2/pets/helloworld')
         .end(function (err, res) {
             t.ok(!err, 'post /pets/{petId} no error.');
+            
             t.strictEqual(res.statusCode, 405, 'post /pets/{petId} 405 status.');
             t.end();
         });
@@ -58,6 +60,7 @@ test('api', function (t) {
         request(app).delete('/v2/pets/1')
         .end(function (err, res) {
             t.ok(!err, 'delete /pets/{petId} no error.');
+            
             t.strictEqual(res.statusCode, 400, 'delete /pets/{petId} 400 status.');
             t.end();
         });

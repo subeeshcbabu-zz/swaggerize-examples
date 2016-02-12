@@ -36,6 +36,7 @@ test('api', function (t) {
         request(app).post('/v2/stores/order').send(body)
         .end(function (err, res) {
             t.ok(!err, 'post /stores/order no error.');
+            
             t.strictEqual(res.statusCode, 200, 'post /stores/order 200 status.');
             responseSchema.validate(res.body, function (error) {
                 t.ok(!error, 'Response schema valid.');
