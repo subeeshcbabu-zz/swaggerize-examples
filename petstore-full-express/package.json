@@ -29,8 +29,8 @@
     "tape": "^3.0.0"
   },
   "scripts": {
-    "test": "tape tests/*.js",
-    "cover": "istanbul cover tape -- test/*.js",
+    "test": "tape tests/test_pets.js",
+    "cover": "istanbul cover tape -- test/test_pets.js",
     "lint": "jshint -c .jshintrc --exclude ./node_modules .",
     "regenerate": "yo swaggerize --only=handlers,models,tests --framework express --apiPath config/petstore-full.json"
   },
