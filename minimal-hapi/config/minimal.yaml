@@ -1,10 +1,15 @@
 swagger: '2.0'
 info:
-  version: 0.0.0
-  title: Simple API
+    version: 0.0.0
+    title: Simple API
 paths:
-  /minimal:
-    get:
-      responses:
-        '200':
-          description: OK
+    /minimal:
+        get:
+            parameters:
+                - name: 'accept-language'
+                  in: header
+                  description: Preferred language of the user
+                  type: string
+        responses:
+            '200':
+                description: OK

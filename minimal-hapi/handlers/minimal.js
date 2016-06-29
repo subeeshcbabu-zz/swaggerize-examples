@@ -4,11 +4,11 @@
  */
 module.exports = {
     /**
-     * 
-     * parameters: 
-     * produces: 
+     *
+     * parameters:
+     * produces:
      */
     get: function (req, reply) {
-        reply().code(501);
+        reply("Hello").code(200);
     }
 };
