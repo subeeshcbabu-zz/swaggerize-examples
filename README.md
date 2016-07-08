@@ -9,9 +9,15 @@ These examples are generated using the [Swaggerize generator](https://github.com
 
 #### Uber
 
-https://github.com/subii/swaggerize-examples/tree/master/default
+https://github.com/subii/swaggerize-examples/tree/master/uber-express
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/uber.yaml
+
+#### glugbot (Generator version v3.0.0)
+
+https://github.com/subii/swaggerize-examples/tree/master/glugbot-express
+
+API - https://github.com/subii/swaggerize-examples/blob/master/api/glugbot.json
 
 #### Petstore-simple
 
