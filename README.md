@@ -35,6 +35,12 @@ https://github.com/subii/swaggerize-examples/tree/master/hapi/minimal-hapi
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/minimal.yaml
 
+#### Spotify
+
+https://github.com/subii/swaggerize-examples/tree/master/hapi/spotify
+
+API - https://github.com/subii/swaggerize-examples/blob/master/api/spotify.yaml
+
 ### Restify
 
 #### Echo
