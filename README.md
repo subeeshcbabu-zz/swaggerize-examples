@@ -9,29 +9,29 @@ These examples are generated using the [Swaggerize generator](https://github.com
 
 #### Uber
 
-https://github.com/subii/swaggerize-examples/tree/master/uber-express
+https://github.com/subii/swaggerize-examples/tree/master/express/uber-express
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/uber.yaml
 
 #### glugbot (Generator version v3.0.0)
 
-https://github.com/subii/swaggerize-examples/tree/master/glugbot-express
+https://github.com/subii/swaggerize-examples/tree/master/express/glugbot-express
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/glugbot.json
 
-#### Petstore-simple
+#### Petstore-full
 
 
-https://github.com/subii/swaggerize-examples/tree/master/petstore-simple
+https://github.com/subii/swaggerize-examples/tree/master/express/petstore-full-express
 
-API - https://github.com/subii/swaggerize-examples/blob/master/api/petstore-simple.yaml
+API - https://github.com/subii/swaggerize-examples/blob/master/api/petstore-full.yaml
 
 
 ### Hapi
 
 #### Minimal
 
-https://github.com/subii/swaggerize-examples/tree/master/minimal-hapi
+https://github.com/subii/swaggerize-examples/tree/master/hapi/minimal-hapi
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/minimal.yaml
 
@@ -39,6 +39,6 @@ API - https://github.com/subii/swaggerize-examples/blob/master/api/minimal.yaml
 
 #### Echo
 
-https://github.com/subii/swaggerize-examples/tree/master/echo-restify
+https://github.com/subii/swaggerize-examples/tree/master/restify/echo-restify
 
 API - https://github.com/subii/swaggerize-examples/blob/master/api/echo.yaml
