@@ -5,46 +5,16 @@ These examples are generated using the [Swaggerize generator](https://github.com
 
 ## Examples
 
-### Express
 
-#### Uber
-
-https://github.com/subii/swaggerize-examples/tree/master/express/uber-express
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/uber.yaml
-
-#### glugbot (Generator version v3.0.0)
-
-https://github.com/subii/swaggerize-examples/tree/master/express/glugbot-express
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/glugbot.json
-
-#### Petstore-full
-
-
-https://github.com/subii/swaggerize-examples/tree/master/express/petstore-full-express
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/petstore-full.yaml
-
-
-### Hapi
-
-#### Minimal
-
-https://github.com/subii/swaggerize-examples/tree/master/hapi/minimal-hapi
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/minimal.yaml
-
-#### Spotify
-
-https://github.com/subii/swaggerize-examples/tree/master/hapi/spotify
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/spotify.yaml
-
-### Restify
-
-#### Echo
-
-https://github.com/subii/swaggerize-examples/tree/master/restify/echo-restify
-
-API - https://github.com/subii/swaggerize-examples/blob/master/api/echo.yaml
+Application | Framework | API | Details
+---|---|---|---
+[Uber](/express/uber-express) | express | [uber.yaml](/api/uber.yaml) | Uber api
+[Petstore](/express/petstore-full-express) | express | [petstore-full.yaml](/api/petstore-full.yaml) | Petstore api
+[glugbot](/express/glugbot-express) | express | [glugbot.json](/api/glugbot.json) | Generator version v3.0.0
+[github](express/github-express) | express | [github.json](/api/github.json) | Generator version v3.0.0
+---|---|---|---
+[minimal](/hapi/minimal-hapi) | hapi | [minimal.yaml](/api/minimal.yaml) | minimal api
+[spotify](/hapi/spotify) | hapi | [spotify.yml](/api/spotify.yml) | Generator version v3.0.0
+[slack](/hapi/slack) | hapi | [slack.json](/api/slack.json) | Generator version v3.0.0
+---|---|---|---
+[echo](/restify/echo-restify) | hapi | [echo.yaml](/api/echo.yaml) | echo api
