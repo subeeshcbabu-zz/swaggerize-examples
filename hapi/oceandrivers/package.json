@@ -1,0 +1,36 @@
+{
+    "name": "oceandrivers",
+    "description": "",
+    "version": "1.0.0",
+    "author": "subeesh chothendavida <subeeshcbabu@yahoo.co.in>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/subeeshcbabu/oceandrivers.git"
+    },
+    "bugs": "http://github.com/subeeshcbabu/oceandrivers/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "hapi": "^9.0.0",
+        "swaggerize-hapi": "^2.0.0-",
+        "swagmock": "~0.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^2",
+        "istanbul": "~0.4.3",
+        "is-my-json-valid": "^2.13.1",
+        "js-yaml": "^3.2.6",
+        "supertest": "^1.2.0",
+        "swagger-parser": "^3.4.1",
+        "tape": "^4"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework hapi --apiPath './config/swagger.json'"
+    },
+    "main": "./server"
+}

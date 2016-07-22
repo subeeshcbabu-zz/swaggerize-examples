@@ -16,5 +16,6 @@ Application | Framework | API | Details
 [minimal](/hapi/minimal-hapi) | hapi | [minimal.yaml](/api/minimal.yaml) | minimal api
 [spotify](/hapi/spotify) | hapi | [spotify.yml](/api/spotify.yml) | Generator version v3.0.0
 [slack](/hapi/slack) | hapi | [slack.json](/api/slack.json) | Generator version v3.0.0
+[slack](/hapi/oceandrivers) | hapi | [oceandrivers.json](/api/oceandrivers.json) | Generator version v3.0.0
  | | |
 [echo](/restify/echo-restify) | restify | [echo.yaml](/api/echo.yaml) | echo api
