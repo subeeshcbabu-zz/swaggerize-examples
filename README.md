@@ -20,3 +20,4 @@ Application | Framework | API | Details
 [oceandrivers](/hapi/oceandrivers) | hapi | [oceandrivers.json](/api/oceandrivers.json) | Generator version v3.0.0
  | | |
 [echo](/restify/echo-restify) | restify | [echo.yaml](/api/echo.yaml) | echo api
+[instagram](/restify/instagram) | restify | [instagram.json](/api/instagram.json) | Generator version v3.0.0
